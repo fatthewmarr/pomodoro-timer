@@ -1,12 +1,22 @@
+// Timer period variables
 var workTime;
 var breakTime;
 var countSec;
 
+// Clock variables
+var pause;
+var work;
+var timer;
+
 $(document).ready(function() {
-  // Define variables used for keeping track of work and break sessions
+  // Initialize variables used for keeping track of work and break session lengths
   workTime = 25;
   breakTime = 5;
   countSec = workTime * 60;
+  
+  // Initialize variables used for clock interface
+  pause = true;
+  work = true;
   
   // Set interface component texts
   $('#work-display').text(workTime);
@@ -31,4 +41,26 @@ function setClockSeconds(seconds) {
   if (seconds < 10)
 	seconds = '0' + seconds;
   $('#clock-display').text(hrs + ':' + min + ':' + seconds);
+}
+
+function workPlus() {
+  if(pause) {
+	if(workTime < 720) {
+      workTime++;
+	  $('#work-display').text(workTime);
+	  countSec = workTime * 60;
+	  setClockSeconds(countSec);
+	}
+  }
+}
+
+function workMinus() {
+  if(pause) {
+	if(workTime > 1) {
+      workTime--;
+	  $('#work-display').text(workTime);
+	  countSec = workTime * 60;
+	  setClockSeconds(countSec);
+	}
+  }
 }
