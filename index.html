@@ -4,6 +4,8 @@
     <meta charset='utf-8'/>
 	<title>Pomodoro Timer</title>
 	<link rel='stylesheet' href='css/pomodoro.css'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/pomodoro.js"></script>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
   </head>
   
@@ -12,20 +14,20 @@
 	  <div>
 	    <p>Set Work Period<p>
 	    <button>&plus;</button>
-	    <p id='work-display'>25</p>
+	    <p id='work-display'></p>
 	    <button>&minus;</button>
 	  </div>
 	  <div>
 	    <p>Set Break Period</p>
 		<button>&plus;</button>
-		<p id='break-display'>5</p>
+		<p id='break-display'></p>
 		<button>&minus;</button>
 	  </div>
 	</div>
 	<div id='clock'>
-	  <p id='session-display'>WORK</p>
-	  <p id='clock-display'>25:00</p>
-	  <button id='timer-button></button>
+	  <p id='session-display'></p>
+	  <p id='clock-display'></p>
+	  <button id='timer-button'></button>
 	</div>
   </body>
 </html>
