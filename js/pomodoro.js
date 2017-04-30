@@ -31,8 +31,7 @@ function workPlus() {
 	if(workTime < 720) {
       workTime++;
 	  $('#work-display').text(workTime);
-	  countSec = workTime * 60;
-	  setClockSeconds(countSec);
+	  resetClock();
 	}
   }
 }
@@ -42,8 +41,7 @@ function workMinus() {
 	if(workTime > 1) {
       workTime--;
 	  $('#work-display').text(workTime);
-	  countSec = workTime * 60;
-	  setClockSeconds(countSec);
+	  resetClock();
 	}
   }
 }
@@ -53,8 +51,7 @@ function breakPlus() {
 	if(breakTime < 60) {
 	  breakTime++;
 	  $('#break-display').text(breakTime);
-	  countSec = workTime * 60;
-	  setClockSeconds(countSec);
+	  resetClock();
 	}
   }
 }
@@ -64,8 +61,7 @@ function breakMinus() {
 	if(breakTime > 1) {
 	  breakTime--;
 	  $('#break-display').text(breakTime);
-	  countSec = workTime * 60;
-	  setClockSeconds(countSec);
+	  resetClock();
 	}
   }
 }
@@ -87,3 +83,11 @@ function setClockSeconds(seconds) {
   $('#clock-display').text(hrs + ':' + min + ':' + seconds);
 }
 
+/* Helper function which sets the clock to its initial configuration
+ */
+function resetClock() {
+  countSec = workTime * 60;
+  setClockSeconds(countSec);
+  work = true;
+  $('#session-display').text('WORK');
+}
