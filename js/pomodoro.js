@@ -18,6 +18,9 @@ $(document).ready(function() {
   pause = true;
   work = true;
   
+  // Get reference to alarm timer sound
+  audio = $('audio')[0];
+  
   // Set interface component texts
   $('#work-display').text(workTime);
   $('#break-display').text(breakTime);
@@ -41,6 +44,7 @@ function countdown() {
       countSec = breakTime * 60;
 	}
   } else {
+	if (countSec === 1) {audio.play();}
 	countSec--;
   }
   setClockSeconds(countSec);
