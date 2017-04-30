@@ -26,6 +26,46 @@ $(document).ready(function() {
   $('#timer-button').text('START');
 });
 
+/* Function which is called on every second by setInterval.
+ * Handles countdown behavior for work and break period, switching between them when the counter reaches zero.
+ */
+function countdown() {
+  // Handle switch between the work period and the break period
+  if(countSec === 0) {
+	work = !work;
+	if (work) {
+	  $('#session-display').text('WORK');
+      countSec = workTime * 60;
+	} else {
+	  $('#session-display').text('BREAK');
+      countSec = breakTime * 60;
+	}
+  } else {
+	countSec--;
+  }
+  setClockSeconds(countSec);
+}
+
+/* Function for handling behavior of the timer button, which will serve as either a start or a stop button, depending
+ * on if the timer is currently counting down.
+ * When pressed while application is paused, starts the timer and turns the button into a stop button.
+ * When pressed while application is not paused, stops the timer and turns the button into a start button.
+ */ 
+function timerButton() {
+  // Start button handling
+  if (pause) {
+	timer = setInterval(countdown, 1000);
+	pause = false;
+	$('#timer-button').text('STOP');
+  }
+  // Stop button handling
+  else {
+	clearInterval(timer);
+	pause = true;
+	$('#timer-button').text('START');
+  }
+}
+
 function workPlus() {
   if(pause) {
 	if(workTime < 720) {
