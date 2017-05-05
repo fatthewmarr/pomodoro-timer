@@ -18,18 +18,18 @@ button {
   max-width: 100%;
 }
 
-#work {
+.timer {
   height: 100%;
   width: 45%;
-  float: left;
   text-align: center;
 }
 
+#work {
+  float: left;
+}
+
 #break {
-  height: 100%;
-  width: 45%;
   float: right;
-  text-align: center;
 }
 
 #clear{
