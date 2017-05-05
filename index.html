@@ -13,24 +13,27 @@
   </head>
   
   <body>
-    <div id='timers'>
-	  <div>
-	    <p>Set Work Period<p>
-	    <button onclick='workPlus()'>&plus;</button>
-	    <p id='work-display'></p>
-	    <button onclick='workMinus()'>&minus;</button>
+    <div id='container'>
+      <div id='timers'>
+	    <div id='work'>
+	      <p>Set Work Period</p>
+	      <button onclick='workPlus()'>&plus;</button>
+	      <p id='work-display'></p>
+	      <button onclick='workMinus()'>&minus;</button>
+	    </div>
+	    <div id='break'>
+	      <p>Set Break Period</p>
+		  <button onclick='breakPlus()'>&plus;</button>
+		  <p id='break-display'></p>
+		  <button onclick='breakMinus()'>&minus;</button>
+	    </div>
+	    <div id='clear'></div>
 	  </div>
-	  <div>
-	    <p>Set Break Period</p>
-		<button onclick='breakPlus()'>&plus;</button>
-		<p id='break-display'></p>
-		<button onclick='breakMinus()'>&minus;</button>
+	  <div id='clock'>
+	    <p id='session-display'></p>
+	    <p id='clock-display'></p>
+	    <button id='timer-button' onclick='timerButton()'></button>
 	  </div>
-	</div>
-	<div id='clock'>
-	  <p id='session-display'></p>
-	  <p id='clock-display'></p>
-	  <button id='timer-button' onclick='timerButton()'></button>
 	</div>
   </body>
 </html>

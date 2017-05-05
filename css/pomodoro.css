@@ -1,11 +1,51 @@
 body {
   font-size: 1.5em;
   font-family: sans-serif;
-  color: #212121;
-  background-color: #DEDEDE;
 }
 
 button {
   font-size: 1em;
   padding: 5px 12px;
+}
+
+#container {
+  max-width: 450px;
+  padding: 20px;
+  margin: auto;
+  background-color: blue;
+}
+
+#timers {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #044B7F;
+}
+
+#work {
+  height: 100%;
+  width: 45%;
+  padding: 0px 0px 30px 0px;
+  float: left;
+  background-color: #E3B505;
+  text-align: center;
+}
+
+#break {
+  height: 100%;
+  width: 45%;
+  padding: 0px 0px 30px 0px;
+  float: right;
+  background-color: #E3B505;
+  text-align: center;
+}
+
+#clear{
+  clear: both;
+}
+
+#clock{
+  max-width: 450px;
+  margin: auto;
+  background-color: #95190C;
+  text-align: center;
 }
