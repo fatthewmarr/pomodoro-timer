@@ -27,6 +27,7 @@ $(document).ready(function() {
   $('#session-display').text('WORK');
   setClockSeconds(countSec);
   $('#timer-button').text('START');
+  $('#timer-button').addClass('start');
 });
 
 /* Function which is called on every second by setInterval.
@@ -61,12 +62,16 @@ function timerButton() {
 	timer = setInterval(countdown, 1000);
 	pause = false;
 	$('#timer-button').text('STOP');
+	$('#timer-button').removeClass('start');
+	$('#timer-button').addClass('stop');
   }
   // Stop button handling
   else {
 	clearInterval(timer);
 	pause = true;
 	$('#timer-button').text('START');
+	$('#timer-button').removeClass('stop');
+	$('#timer-button').addClass('start');
   }
 }
 
