@@ -58,7 +58,14 @@ body {
 
 #clock button{
   padding: 0 16px;
+}
+
+.start {
   background-color: #388E3C;
+}
+
+.stop {
+  background-color: #C30101;
 }
 
 button {
