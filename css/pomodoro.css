@@ -24,12 +24,7 @@ body {
 }
 
 .timer button {
-  font-size: 1em;
-  height: 36px;
   padding: 0 11px;
-  border-radius: 2px;
-  border-style: none;
-  color: white;
   background-color: #2196F3;
 }
 
@@ -62,11 +57,14 @@ body {
 }
 
 #clock button{
+  padding: 0 16px;
+  background-color: #388E3C;
+}
+
+button {
   font-size: 1em;
   height: 36px;
   border-radius: 2px;
   border-style: none;
-  padding: 0 16px;
   color: white;
-  background-color: #388E3C;
 }
