@@ -8,7 +8,6 @@ body {
   max-width: 450px;
   padding: 20px;
   margin: auto;
-  border-radius: 10px;
 }
 
 #timers {
@@ -44,7 +43,6 @@ body {
   margin: auto;
   text-align: center;
   padding: 10px;
-  border-radius: 5px;
   color: white;
 }
 
