@@ -22,8 +22,15 @@ The **Pomodoro Timer** is a website application for keeping track of your work a
 ### The Interface
 ![A screenshot of the application interface as viewed on a desktop web brower](/readme-images/desktop-screenshot.png?raw=true "Application Interface Screenshot")
 
+*Figure 1 - Screenshot demonstrating the entire interface of the application as it appears on a desktop web browser.*
+
 The Pomodoro Timer interface consists of three panels. The top two are side by side pinels for setting the work and break time periods. Each timer panel has two buttons, one for increasing the time period and one for decreasing it. The timer panels also have a text display between the buttons which displays the current time period length in minutes. The bottom panel is the clock panel. It has two text displays, one for displaying the current session (either work or break), and the clock display, which displays time remaining in the current session in an hours:minutes:seconds format. Finally, the clock panel has a button, which is used for starting and stopping the timer.
 
 #### Responsiveness
 
 The Pomodoro Timer interface is designed with responsiveness in mind. The application resizes itself with respect to the screen size, allowing the application to be visible and functional on screens of different sizes and aspect ratios.
+
+![A screenshot of the application interface as viewed on slim aspect ratio screen, such as a smartphone. Screenshot features the top two panels of the interface.](/readme-images/iPhone-screenshot-1.png?raw=true "Smartphone Application Screenshot 1")
+![A screenshot of the application interface as viewed on slim aspect ratio screen, such as a smartphone. Screenshot features the bottom panel of the interface.](/readme-images/iPhone-screenshot-2.png?raw=true "Smartphone Application Screenshot 2")
+
+*Figures 2 and 3 - Screenshots demonstrating the interface of the application as it appears on a slim aspect ratio screen, such as a smartphone.*
