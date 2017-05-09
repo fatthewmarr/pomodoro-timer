@@ -16,3 +16,14 @@ The Pomodoro Technique is used to make focusing on work easier. It uses short bu
 
 ## The Application
 Work in Progress
+
+The **Pomodoro Timer** is a website application for keeping track of your work and break periods when using the Pomodoro Technique. It is built with HTML, CSS, and JavaScript with JQuery. The application can be found at https://farr16.github.io/pomodoro-timer
+
+### The Interface
+![A screenshot of the application interface as viewed on a desktop web brower](/readme-images/desktop-screenshot.png?raw=true "Application Interface Screenshot")
+
+The Pomodoro Timer interface consists of three panels. The top two are side by side pinels for setting the work and break time periods. Each timer panel has two buttons, one for increasing the time period and one for decreasing it. The timer panels also have a text display between the buttons which displays the current time period length in minutes. The bottom panel is the clock panel. It has two text displays, one for displaying the current session (either work or break), and the clock display, which displays time remaining in the current session in an hours:minutes:seconds format. Finally, the clock panel has a button, which is used for starting and stopping the timer.
+
+#### Responsiveness
+
+The Pomodoro Timer interface is designed with responsiveness in mind. The application resizes itself with respect to the screen size, allowing the application to be visible and functional on screens of different sizes and aspect ratios.
