@@ -17,7 +17,7 @@ The Pomodoro Technique is used to make focusing on work easier. It uses short bu
 ## The Application
 Work in Progress
 
-The **Pomodoro Timer** is a website application for keeping track of your work and break periods when using the Pomodoro Technique. It is built with HTML, CSS, and JavaScript with JQuery. The application can be found at https://farr16.github.io/pomodoro-timer
+The **Pomodoro Timer** is a website application for keeping track of your work and break periods when using the Pomodoro Technique. It is built with HTML, CSS, and JavaScript with JQuery. The application can be found at https://fatthewmarr.github.io/pomodoro-timer
 
 ### The Interface
 ![A screenshot of the application interface as viewed on a desktop web brower](/readme-images/desktop-screenshot.png?raw=true "Application Interface Screenshot")
